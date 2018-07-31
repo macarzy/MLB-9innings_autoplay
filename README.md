@@ -4,8 +4,8 @@ With the AUTOPLAY function, we can use it in league mode continually.
 
 without lose 3 games function
 
-without player's skill upgrade
+player's skill upgrade testing...
 
-without players of the month
+players of the month testing...
 
 cant be use in playoff
