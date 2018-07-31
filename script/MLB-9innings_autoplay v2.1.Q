@@ -9,7 +9,7 @@ StopHotkeyMod=0
 RunOnce=1
 EnableWindow=
 MacroID=c61cfd22-8203-498d-82a6-f155d2ab1f9e
-Description=§Úªº¸}¥»2
+Description=æˆ‘çš„è…³æœ¬2
 Enable=1
 AutoRun=0
 [Repeat]
@@ -36,7 +36,7 @@ BS windows locate at 456,194,1479,861 for 1920*1080 LCD
 */
 
 Do //offense only mode
-FindPic 384,252,1397,824,"C:\Users\USER\Desktop\«öÁäºëÆF\pic\off_only.bmp",0.9,intX,intY
+FindPic 384,252,1397,824,"C:\Users\USER\Desktop\æŒ‰éµç²¾éˆ\pic\off_only.bmp",0.9,intX,intY
 If intX > 0 And intY > 0 Then 
 	KeyPress "i", 1
 	Delay 3000
@@ -57,7 +57,7 @@ End If
 Loop
 
 Do //players of the month check
-FindPic 456,194,1479,861,"C:\Users\USER\Desktop\«öÁäºëÆF\pic\potm_ok.bmp",0.9,intX,intY
+FindPic 456,194,1479,861,"C:\Users\USER\Desktop\æŒ‰éµç²¾éˆ\pic\potm_ok.bmp",0.9,intX,intY
 If intX > 0 And intY > 0 Then 
 	KeyPress "o", 1
 	Delay 2000
@@ -68,7 +68,7 @@ End If
 Loop
 
 Do //skill upgrade check
-FindPic 456,194,1479,861,"C:\Users\USER\Desktop\«öÁäºëÆF\pic\skill_upgrade.bmp",0.9,intX,intY
+FindPic 456,194,1479,861,"C:\Users\USER\Desktop\æŒ‰éµç²¾éˆ\pic\skill_upgrade.bmp",0.9,intX,intY
 If intX > 0 And intY > 0 Then
 	KeyPress "o", 1
 	Delay 1000
