@@ -24,7 +24,7 @@ SetupOCXFile=
 
 [Script]
 //////////////////////////////////////////////////////////////
-//anjian 9															//
+//anjian 9													//
 //MLB 9 Innings V 3.0.7										//
 //Autoplay  v 2.2											//
 //Bulestacks bete 4											//
@@ -37,7 +37,7 @@ BS windows locate at 456,194,1479,861 for 1920*1080 LCD
 */
 
 Do //offense only mode
-FindPic 384,252,1397,824,"C:\Users\USER\Desktop\anjian\pic\off_only.bmp",0.9,intX,intY
+FindPic 384,252,1397,824,"D:\MLB-9innings_autoplay\anjian\pic\off_only.bmp",0.7,intX,intY
 If intX > 0 And intY > 0 Then 
 	KeyPress "i", 1
 	Delay 3000
@@ -46,7 +46,7 @@ If intX > 0 And intY > 0 Then
 	
 		For 8
 		KeyPress "3", 1
-		Delay 500
+		Delay 700
 		EndFor
 	
 	KeyPress "4", 1
@@ -58,10 +58,12 @@ End If
 Loop
 
 Do //players of the month check
-FindPic 456,194,1479,861,"C:\Users\USER\Desktop\anjian\pic\potm_ok.bmp",0.9,intX,intY
-If intX > 0 And intY > 0 Then 
+FindPic 876,282,1058,345,"D:\MLB-9innings_autoplay\anjian\pic\potm_ok.bmp",0.9,intX,intY
+If intX> 0 And intY> 0 Then 
 	KeyPress "p", 1
-	Delay 2000
+	Delay 1000
+	KeyPress "p", 1
+	Delay 1000
 Else 
 	Exit Do
 	
@@ -69,25 +71,62 @@ End If
 Loop
 
 Do //skill upgrade check
-FindPic 456,194,1479,861,"C:\Users\USER\Desktop\anjian\pic\skill_upgrade.bmp",0.9,intX,intY
+FindPic 456,194,1479,861,"D:\MLB-9innings_autoplay\anjian\pic\skill_upgrade.bmp",0.7,intX,intY
 If intX > 0 And intY > 0 Then
-	KeyPress "o", 1
-	Delay 1000
-	KeyPress "q", 1
-	Delay 1000
-	KeyPress "1", 1
-	Delay 1000
+	KeyPress "l", 1
 Else
 	Exit Do 
 End If
 Loop
 
 Do //unknown problem
-FindPic 456,194,1479,861,"C:\Users\USER\Desktop\anjian\pic\prbm_check.bmp",0.9,intX,intY
+FindPic 456,194,1479,861,"D:\MLB-9innings_autoplay\anjian\pic\prbm_check.bmp",0.7,intX,intY
 If intX > 0 And intY > 0 Then
 	KeyPress "u", 1
 Else
 	Exit Do 
+End If
+Loop
+
+Do //playoff next page start
+FindPic 456,194,1479,861,"D:\MLB-9innings_autoplay\anjian\pic\next_page.bmp",0.7,intX,intY
+If intX > 0 And intY > 0 Then 
+	KeyPress "L", 1
+Else 
+	Exit Do
+End If
+Loop
+
+Do //playoff next page start
+FindPic 456,194,1479,861,"D:\MLB-9innings_autoplay\anjian\pic\next_page_playoffwin.bmp",0.7,intX,intY
+If intX > 0 And intY > 0 Then 
+	KeyPress "o", 1
+Else 
+	Exit Do
+End If
+Loop
+
+Do //3 loses
+FindPic 456,194,1479,861,"D:\MLB-9innings_autoplay\anjian\pic\3_lose.bmp",0.7,intX,intY
+If intX > 0 And intY > 0 Then 
+	KeyPress "p", 1
+	Delay 1000
+	KeyPress "u", 1
+	Delay 1000
+	
+Else 
+	Exit Do
+End If
+Loop
+
+Do //home page check
+FindPic 467,243,540,319,"D:\MLB-9innings_autoplay\anjian\pic\home_page.bmp",0.7,intX,intY
+If intX > 0 And intY > 0 Then 
+	KeyPress "q", 1
+	Delay 2000
+	KeyPress "1", 1
+Else 
+	Exit Do
 End If
 loop
 
